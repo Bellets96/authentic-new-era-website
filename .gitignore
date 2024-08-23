@@ -4,3 +4,12 @@ protected/runtime/*
 !protected/runtime/.gitignore
 protected/data/*.db
 themes/classic/views/
+node_modules
+*.apk
+app/www
+composer.lock
+vendor
+.idea
+zip/*
+.DS_Store
+.log
