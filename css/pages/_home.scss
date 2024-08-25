@@ -1,0 +1,17 @@
+.ar-hero {
+  height: 100svh;
+  width: 100%;
+  position: relative;
+
+  .ar-home-video {
+    background-color: aqua;
+    height: 100%;
+    width: 100%;
+  }
+
+  a {
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+}

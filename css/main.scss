@@ -1,0 +1,18 @@
+@import "variables";
+
+//Layouts
+
+@import "layouts/header";
+@import "layouts/footer";
+
+//Pages
+
+@import "pages/home";
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
