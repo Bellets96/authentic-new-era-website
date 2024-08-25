@@ -9,8 +9,11 @@ $this->pageTitle=Yii::app()->name;
     <source media="(min-width: 900px)" src="" type="video/mp4">
     <source media="(max-width: 889px)" src="" type="video/mp4">
   </video>
-  <a href="#">
-    Authentic
+  <a class="ar-btn-home" target="_blank" href="https://discord.gg/authenticremastered"> 
+      Entra nel mondo di Authentic
+    <span class="ar-btn-discord">
+        <i class="bi bi-discord"></i>
+    </div>   
   </a>
 </section>
 
