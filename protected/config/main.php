@@ -75,6 +75,14 @@ return array(
 			),
 		),
 
+		'clientScript'=>array(
+            'coreScriptPosition'=>CClientScript::POS_END,
+            'scriptMap'=>array(
+                'jquery.js'=>false,
+                'jquery.min.js'=>false,
+            )
+        ),
+
 	),
 
 	// application-level parameters that can be accessed
