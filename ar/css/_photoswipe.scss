@@ -1,0 +1,233 @@
+//Photoswipe
+
+.pswp {
+
+    .pswp__bg {
+        //background: #f0f4f5;
+        background: #fff;
+
+    }
+
+    .pswp__ui {
+        .pswp__button--close{
+            height: 28px;
+            width: 28px;
+            display: block;
+            border-radius: 50%;
+            //background: #000 !important;
+            color: #333;
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: 400;
+            padding: 0;
+            //margin: 20px auto 0;
+            margin-top:0;
+            top: 0;
+            transform:rotate(45deg);
+        }
+        .pswp__top-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 44px;
+            z-index: 90;
+            padding: 10px;
+        }
+        .pswp__button {
+            //position:absolute;
+            display: block;
+            float: right;
+            padding: 0;
+            height: 24px;
+            width: 24px;
+            top: 50%;
+            background: transparent;
+
+            svg {
+                pointer-events: none;
+                fill: #444;
+            }
+
+            &.pswp__button--fs {
+                //margin-right: 10px;
+                margin-right: 20px;
+                height: 17px;
+                width: 17px;
+                position: relative;
+                margin-top: 3px;
+                top:1px;
+
+                display: none !important;
+
+                span{
+                    display: block;
+                    width:30%;
+                    height:30%;
+                    position:absolute;
+                    top:0;
+                    left:0;
+                    //border-color: $default;
+                    pointer-events: none;
+
+
+                    &:nth-child(1){
+                        border-left:solid 2px $default;
+                        border-top:solid 2px $default;
+                    }
+                    &:nth-child(2){
+                        border-right:solid 2px $default;
+                        border-top:solid 2px $default;
+                        left:auto;
+                        right:0;
+                    }
+                    &:nth-child(3){
+                        border-right:solid 2px $default;
+                        border-bottom:solid 2px $default;
+                        left:auto;
+                        top:auto;
+                        bottom:0;
+                        right:0;
+                    }
+                    &:nth-child(4){
+                        border-left:solid 2px $default;
+                        border-bottom:solid 2px $default;
+                        top:auto;
+                        bottom:0;
+                    }
+                }
+            }
+
+            &.pswp__button--arrow--right,
+            &.pswp__button--arrow--left {
+                position: absolute;
+                //height: 34px;
+                //width: 34px;
+                top: 50%;
+                z-index: 90;
+                left:10px;
+                transform:translateY(-50%);
+
+                height: 28px;
+                width: 28px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                //background: #000 !important;
+                color: #333;
+                font-size: 24px;
+                line-height: 24px;
+                font-weight: 100;
+                padding: 0;
+                //margin: 20px auto 0;
+                margin-top:0;
+                //top: 0;
+                transform:translateY(-50%);
+                border: solid 1px #333;
+
+
+                svg{
+                    width: 40%;
+                    height: 40%;
+                    fill:#333;
+                    transform:rotate(90deg);
+                    transform-origin: center center;
+                }
+
+                //svg {
+                //    width: 34px !important;
+                //    height: 34px !important;
+                //    pointer-events: none;
+                //    fill: #444;
+                //}
+
+                html.mobile & {
+                    display: none;
+                }
+
+            }
+            &.pswp__button--arrow--right {
+                right: 10px;
+                left:auto;
+                svg{
+                    transform:rotate(-90deg);
+                    transform-origin: center center;
+                }
+            }
+
+        }
+
+        .pswp__counter {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            font-weight: $bold;
+            color: #444;
+            text-align: center;
+            font-family: $defFont;
+            height: 44px;
+            padding: 10px 0;
+        }
+
+        .pswp__caption{
+            @extend .pswp__counter;
+
+            bottom:auto;
+            top:0;
+            z-index:5;
+            padding: 10px 43px;
+            @media(max-width: 767px){
+                font-size: 12px;
+            }
+
+            &.pswp__caption--fake{
+                display: none;
+            }
+        }
+
+    }
+
+    .pswp__button--share {
+        display: none !important;
+    }
+
+    .pswp__wrapper {
+        line-height: 0;
+        width: 100%;
+        height: auto;
+        max-width: 90vmin;
+        //position: relative;
+        //display: inline-block;
+        //display: block;
+        //vertical-align: middle;
+        //margin: 0 auto;
+        //text-align: left;
+        z-index: 1045;
+        position:absolute;
+        top:50%;
+        lefT:50%;
+        transform: translate(-50%, -50%);
+    }
+    .pswp__video-wrapper {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        padding-top: 25px;
+        height: 0;
+        width: 100%;
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    video {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+}

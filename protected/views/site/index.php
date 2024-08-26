@@ -17,7 +17,7 @@ $this->pageTitle=Yii::app()->name;
   </a>
 </section>
 
-<section class="ar-">
+<section class="ar-description">
 
 </section>
 
