@@ -27,8 +27,8 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'tags'); ?>
-		<?php echo $form->textArea($model,'tags',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->label($model,'tag'); ?>
+		<?php echo $form->textField($model,'tag'); ?>
 	</div>
 
 	<div class="row">

@@ -7,7 +7,7 @@
  * @property integer $id
  * @property string $title
  * @property string $content
- * @property string $tags
+ * @property string $tag
  * @property integer $status
  * @property integer $create_time
  * @property integer $update_time
@@ -37,10 +37,10 @@ class Post extends CActiveRecord
 			array('title, content, status, author_id', 'required'),
 			array('status, create_time, update_time, author_id', 'numerical', 'integerOnly'=>true),
 			array('title', 'length', 'max'=>128),
-			array('tags', 'safe'),
+			array('tag', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, title, content, tags, status, create_time, update_time, author_id', 'safe', 'on'=>'search'),
+			array('id, title, content, tag, status, create_time, update_time, author_id', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -65,7 +65,7 @@ class Post extends CActiveRecord
 			'id' => 'ID',
 			'title' => 'Title',
 			'content' => 'Content',
-			'tags' => 'Tags',
+			'tag' => 'Tag',
 			'status' => 'Status',
 			'create_time' => 'Create Time',
 			'update_time' => 'Update Time',
@@ -94,7 +94,7 @@ class Post extends CActiveRecord
 		$criteria->compare('id',$this->id);
 		$criteria->compare('title',$this->title,true);
 		$criteria->compare('content',$this->content,true);
-		$criteria->compare('tags',$this->tags,true);
+		$criteria->compare('tag',$this->tag,true);
 		$criteria->compare('status',$this->status);
 		$criteria->compare('create_time',$this->create_time);
 		$criteria->compare('update_time',$this->update_time);
@@ -114,5 +114,20 @@ class Post extends CActiveRecord
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
+	}
+
+	protected function beforeSave()
+	{
+		if (parent::beforeSave()) {
+			if ($this->isNewRecord) {
+				$this->create_time = time();
+				$this->update_time = time();
+			} else {
+				$this->update_time = time();
+			}
+			return true;
+		} else {
+			return false;
+		}
 	}
 }

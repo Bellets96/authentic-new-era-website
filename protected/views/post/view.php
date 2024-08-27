@@ -24,7 +24,7 @@ $this->menu=array(
 		'id',
 		'title',
 		'content',
-		'tags',
+		'tag',
 		'status',
 		'create_time',
 		'update_time',

@@ -6,14 +6,16 @@ $this->pageTitle=Yii::app()->name;
 
 <section class="ar-hero">
   <video class="ar-home-video" muted autoplay>
-    <source media="(min-width: 900px)" src="https://videos.pexels.com/video-files/3735224/3735224-hd_1920_1080_25fps.mp4" type="video/mp4">
-    <source media="(max-width: 889px)" src="https://videos.pexels.com/video-files/3832278/3832278-uhd_1440_2732_25fps.mp4" type="video/mp4">
+    <source media="(min-width: 768px)" src="https://videos.pexels.com/video-files/3735224/3735224-hd_1920_1080_25fps.mp4" type="video/mp4">
+    <source media="(max-width: 767px)" src="https://videos.pexels.com/video-files/3832278/3832278-uhd_1440_2732_25fps.mp4" type="video/mp4">
   </video>
   <nav class="ar-navbar">
     <ul>
       <li>
         <a class="ar-btn-home" target="_blank" href="https://discord.gg/authenticremastered"> 
-          Unisciti al Discord
+          <span class="ar-btn-text">
+            Unisciti al Discord
+          </span>
           <span class="ar-btn-image">
             <i class="bi bi-discord"></i>
           </span>   
@@ -21,7 +23,9 @@ $this->pageTitle=Yii::app()->name;
       </li>
       <li>
         <a class="ar-btn-home" target="_blank" href="#"> 
-          Entra nel mondo di Authentic
+          <span class="ar-btn-text">
+            Entra nel mondo di Authentic
+          </span>
           <span class="ar-btn-image">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
               <polygon fill="currentColor" points="5,45 9,34 21,22 15,45"></polygon>
@@ -36,7 +40,9 @@ $this->pageTitle=Yii::app()->name;
       </li>
       <li>
         <a class="ar-btn-home" target="_blank" href="#"> 
-          Esplora il regolamento
+          <span class="ar-btn-text">
+            Esplora il regolamento
+          </span>
           <span class="ar-btn-image">
             <i class="bi bi-book-half"></i> 
           </span>    
@@ -44,7 +50,9 @@ $this->pageTitle=Yii::app()->name;
       </li>
       <li>
         <a class="ar-btn-home" target="_blank" href="#"> 
-          Accedi al portale del cittadino
+          <span class="ar-btn-text">
+            Accedi al portale del cittadino
+          </span>
           <span class="ar-btn-image">
             <i class="bi bi-person-bounding-box"></i>
           </span>    
@@ -61,7 +69,7 @@ $this->pageTitle=Yii::app()->name;
         <ul>
             <li>
               <a class="ar-btn-social" target="_blank" href="#"> 
-                <span>
+                <span class="ar-btn-text">
                   Instagram
                 </span> 
                 <span class="ar-btn-image">
@@ -71,7 +79,7 @@ $this->pageTitle=Yii::app()->name;
             </li>
             <li>
               <a class="ar-btn-social" target="_blank" href="#"> 
-                  <span>
+                  <span class="ar-btn-text">
                     TikTok
                   </span>
                 <span class="ar-btn-image">
@@ -81,7 +89,7 @@ $this->pageTitle=Yii::app()->name;
             </li>
             <li>
               <a class="ar-btn-social" target="_blank" href="#"> 
-                <span>
+                <span class="ar-btn-text">
                   YouTube
                 </span> 
                 <span class="ar-btn-image">
@@ -98,7 +106,7 @@ $this->pageTitle=Yii::app()->name;
 <section class="ar-description">
   <div class="container">
     <div class="row">
-      <article class="col-12">
+      <div class="col-12">
         <article class="ar-description-wrapper">
           <div class="ar-description-text">
             <h2>Chi siamo</h2>
@@ -153,7 +161,6 @@ $this->pageTitle=Yii::app()->name;
             <img src="https://placehold.co/1920x1080" alt="">
           </div>
         </article>
-        </div>
       </div>
     </div>
   </div>
@@ -163,12 +170,18 @@ $this->pageTitle=Yii::app()->name;
   <div class="container">
     <div class="row">
       <div class="col-12">
-
-        <?php $this->widget('zii.widgets.CListView', array(
-        'dataProvider'=>$dataProvider,
-        'itemView'=>'/post/_view',
-        )); ?>
-
+        <?php foreach($posts as $post): ?>
+          <article class="ar-blog-article" style="--tag-color:<?php  echo CHtml::encode(Tag::getTag($post->tag)['color']); ?>">
+            <div class="ar-blog-wrapper">
+              <h6 class="ar-blog-top"><?php echo CHtml::encode(Tag::getTag($post->tag)['name']); ?></h6>
+              <div class="ar-blog-text">
+                <h2><?php echo CHtml::encode($post->title); ?></h2>
+                <p><?php echo CHtml::encode($post->content); ?></p>
+              </div>
+              <small class="ar-blog-bottom"><?php echo CHtml::encode(date("d/m/Y H:m",$post->create_time)); ?></small>
+            </div>
+          </article>
+        <?php endforeach; ?>
       </div>
     </div>
   </div>

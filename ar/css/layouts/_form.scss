@@ -1,0 +1,57 @@
+.ar-form {
+    .ar-form-wrapper {
+        margin: 12svh auto 0 auto;
+        padding: 1rem;
+        border-radius: 1rem;
+        width: 100%;
+        max-width: 670px;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            .ar-input-group {
+                background: var(--ar-white);
+                border: 1px solid var(--ar-blue);
+                border-radius: 1rem;
+                position: relative;
+                display: flex;
+                align-items: center;
+
+                label {
+                    position: absolute;
+                    align-content: center;
+                    left: 1rem;
+                    padding-inline: 0.5rem;
+                    transition: all 200ms ease;
+                }
+
+                input {
+                    padding: 1rem 2rem;
+                    width: 100%;
+
+                    &:not(:placeholder-shown),
+                    &:focus {
+                        + label {
+                            transform: translateY(-80%) scale(0.8);
+                        }
+                    }
+                }
+            }
+
+            .ar-btn-group {
+                .ar-btn {
+                    padding: 0.5rem 1rem;
+                    border-radius: 0.5rem;
+                    background-color: var(--ar-teal);
+                    transition: all 200ms ease;
+
+                    &:hover {
+                        background-color: var(--ar-blue);
+                    }
+                }
+            }
+        }
+    }
+}

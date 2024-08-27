@@ -6,6 +6,8 @@
  * The followings are the available columns in table 'tbl_tag':
  * @property integer $id
  * @property string $name
+ * @property integer $type
+ * @property string $color
  */
 class Tag extends CActiveRecord
 {
@@ -25,8 +27,10 @@ class Tag extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('name', 'required'),
+			array('name, type', 'required'),
 			array('name', 'length', 'max'=>128),
+			array('color', 'length', 'max'=>6),
+			array('color', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, name', 'safe', 'on'=>'search'),
@@ -52,6 +56,8 @@ class Tag extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'name' => 'Name',
+			'type'=>'Tipologia',
+			'color'=>'Colore'
 		);
 	}
 
@@ -91,4 +97,14 @@ class Tag extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+	public static function getTag($type) {
+		$tag = Tag::model()->findByAttributes(array('type' => $type));
+		if ($tag !== null) {
+			return $tag->attributes;
+		}
+	
+		return ['name'=>'', 'color'=>''];
+	}
+	
 }

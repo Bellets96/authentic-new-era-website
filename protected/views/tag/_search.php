@@ -21,6 +21,16 @@
 		<?php echo $form->textField($model,'name',array('size'=>60,'maxlength'=>128)); ?>
 	</div>
 
+	<div class="row">
+		<?php echo $form->label($model,'type'); ?>
+		<?php echo $form->textField($model,'type'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'color'); ?>
+		<?php echo $form->textField($model,'color',array('size'=>7,'maxlength'=>7)); ?>
+	</div>
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Search'); ?>
 	</div>

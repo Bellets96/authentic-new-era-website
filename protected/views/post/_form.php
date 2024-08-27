@@ -32,9 +32,9 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'tags'); ?>
-		<?php echo $form->textArea($model,'tags',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'tags'); ?>
+		<?php echo $form->labelEx($model,'tag'); ?>
+		<?php echo $form->textField($model,'tag'); ?>
+		<?php echo $form->error($model,'tag'); ?>
 	</div>
 
 	<div class="row">

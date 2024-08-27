@@ -5,11 +5,20 @@
 
 @import "layouts/header";
 @import "layouts/footer";
+@import "layouts/form";
 
 //Pages
 
 @import "pages/home";
+@import "pages/admin";
 
 main { 
-    background: url(/ar/img/logo_ar_full.png) var(--black) no-repeat fixed bottom;
+    background: url(../img/logo_ar_full.png) var(--black) no-repeat fixed center;
+    background-size: 30%;
+    padding-bottom: 4rem;
+    min-height: 100svh;
+}
+
+.error {
+    color: var(--bs-danger);
 }

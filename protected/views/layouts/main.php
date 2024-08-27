@@ -7,9 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2" />
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
     <meta name="format-detection" content="telephone=no">
+	
     <!-- Web app mobile -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
+
+	<!-- Meta tags -->
+	<meta name="description" content="Server FIVEM di GTA FULL RP ambientato a Roma. Crea la tua storia.">
+	<meta property="og:title" content="Authentic New Era Website">
+	<meta property="og:description" content="Server FIVEM di GTA FULL RP ambientato a Roma. Crea la tua storia.">
+	<meta property="og:image" content="<?php echo Yii::app()->request->baseUrl; ?>/ar/img/logo_ar_full.png"/>
 
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,18 +37,6 @@
 
 <body>
 
-	<header>
-		<?php /* $this->widget('zii.widgets.CMenu',array(
-			'items'=>array(
-				array('label'=>'Home', 'url'=>array('/site/index')),
-				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-				array('label'=>'Contact', 'url'=>array('/site/contact')),
-				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
-			),
-		));  */?>		
-	</header>
-
 	<main>
 	
 		<?php if(isset($this->breadcrumbs)):?>
@@ -53,9 +48,6 @@
 		<?php echo $content; ?>
 
 	</main>
-
-	<footer>
-	</footer>
 
 <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/ar/core/js/modernizr.js"></script>
 <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/ar/core/js/bootstrap.bundle.js"></script>

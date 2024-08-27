@@ -25,9 +25,18 @@ class SiteController extends Controller
 	{
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
-		$dataProvider=new CActiveDataProvider('Post');
-		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
+
+		$criteria = new CDbCriteria(array(
+			'condition'=>'status=2', //Solo i post pubblici
+			'order' => 'update_time DESC',
+			'limit' => 4,
+		));
+	
+		$latestPosts = Post::model()->findAll($criteria);
+	
+		// Passa i dati alla vista
+		$this->render('index', array(
+			'posts' => $latestPosts,
 		));
 	}
 

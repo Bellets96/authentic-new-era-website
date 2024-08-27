@@ -25,6 +25,18 @@
 		<?php echo $form->error($model,'name'); ?>
 	</div>
 
+	<div class="row">
+		<?php echo $form->labelEx($model,'type'); ?>
+		<?php echo $form->textField($model,'type'); ?>
+		<?php echo $form->error($model,'type'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'color'); ?>
+		<?php echo $form->textField($model,'color',array('size'=>7,'maxlength'=>7)); ?>
+		<?php echo $form->error($model,'color'); ?>
+	</div>
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>
