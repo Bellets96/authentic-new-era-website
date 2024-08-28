@@ -23,17 +23,17 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 
 						<div class="ar-input-group">
 							<?php echo $form->textField($model,'username', array('placeholder'=>' ')); ?>
-							<?php echo $form->label($model,'username'); ?>
-							<?php // echo $form->error($model,'username'); ?>
+							<?php echo $form->label($model,'username') ?>
+							<?php echo $form->error($model,'username', array('class'=>'ar-error-message')); ?>
 						</div>
 
 						<div class="ar-input-group">
 							<?php echo $form->passwordField($model,'password', array('placeholder'=>' ')); ?>
 							<?php echo $form->label($model,'password'); ?>
-							<?php // echo $form->error($model,'password'); ?>
+							<?php echo $form->error($model,'password', array('class'=>'ar-error-message')); ?>
 						</div>
 
-						<div class="ar-btn-group">
+						<div class="ar-btn-group d-none">
 							<?php echo CHtml::submitButton('Login', array('class'=>'ar-btn')); ?>
 						</div>
 

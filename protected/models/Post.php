@@ -7,7 +7,7 @@
  * @property integer $id
  * @property string $title
  * @property string $content
- * @property string $tag
+ * @property string $category
  * @property integer $status
  * @property integer $create_time
  * @property integer $update_time
@@ -18,6 +18,15 @@
  */
 class Post extends CActiveRecord
 {
+	const STATUS_DRAFT = 1;
+	const STATUS_PUBLISHED = 2;
+	const STATUS_ARCHIVED = 3;
+	const CATEGORY_COMUNICAZIONI = 1;
+	const CATEGORY_NOVITA = 2;
+	const CATEGORY_EVENTI = 3;
+	const CATEGORY_GUIDE = 4;
+	const CATEGORY_PARTNER = 5;
+
 	/**
 	 * @return string the associated database table name
 	 */
@@ -35,12 +44,11 @@ class Post extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('title, content, status, author_id', 'required'),
-			array('status, create_time, update_time, author_id', 'numerical', 'integerOnly'=>true),
+			array('status, category, create_time, update_time, author_id', 'numerical', 'integerOnly'=>true),
 			array('title', 'length', 'max'=>128),
-			array('tag', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, title, content, tag, status, create_time, update_time, author_id', 'safe', 'on'=>'search'),
+			array('id, title, content, status, category, create_time, update_time, author_id', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -51,9 +59,10 @@ class Post extends CActiveRecord
 	{
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
-		return array(
-			'author' => array(self::BELONGS_TO, 'User', 'author_id'),
-		);
+        return array(
+            'status' => array(self::BELONGS_TO, 'Lookup', 'status'),
+            'author' => array(self::BELONGS_TO, 'User', 'author_id'),
+        );
 	}
 
 	/**
@@ -65,7 +74,7 @@ class Post extends CActiveRecord
 			'id' => 'ID',
 			'title' => 'Title',
 			'content' => 'Content',
-			'tag' => 'Tag',
+			'category' => 'Category',
 			'status' => 'Status',
 			'create_time' => 'Create Time',
 			'update_time' => 'Update Time',
@@ -94,7 +103,7 @@ class Post extends CActiveRecord
 		$criteria->compare('id',$this->id);
 		$criteria->compare('title',$this->title,true);
 		$criteria->compare('content',$this->content,true);
-		$criteria->compare('tag',$this->tag,true);
+		$criteria->compare('category',$this->category);
 		$criteria->compare('status',$this->status);
 		$criteria->compare('create_time',$this->create_time);
 		$criteria->compare('update_time',$this->update_time);
@@ -129,5 +138,11 @@ class Post extends CActiveRecord
 		} else {
 			return false;
 		}
+	}	
+	public function getStatusName()
+	{
+		return $this->status ? $this->status : '(Nessuno Status)';
 	}
+	
+
 }

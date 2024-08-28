@@ -6,7 +6,7 @@ $this->pageTitle=Yii::app()->name;
 
 <section class="ar-hero">
   <video class="ar-home-video" muted autoplay>
-    <source media="(min-width: 768px)" src="https://videos.pexels.com/video-files/3735224/3735224-hd_1920_1080_25fps.mp4" type="video/mp4">
+    <source media="(min-width: 768px)" src="<?php echo Yii::app()->request->baseUrl; ?>/ar/video/video_ar.webm" type="video/webm">
     <source media="(max-width: 767px)" src="https://videos.pexels.com/video-files/3832278/3832278-uhd_1440_2732_25fps.mp4" type="video/mp4">
   </video>
   <nav class="ar-navbar">
@@ -103,6 +103,27 @@ $this->pageTitle=Yii::app()->name;
   </div>
 </section>
 
+<section class="ar-blog">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <?php foreach($posts as $post): ?>
+          <article class="ar-blog-article" style="--tag-color:<?php  echo CHtml::encode(Tag::getTag($post->tag)['color']); ?>">
+            <div class="ar-blog-wrapper">
+              <h6 class="ar-blog-top"><?php echo CHtml::encode(Tag::getTag($post->tag)['name']); ?></h6>
+              <div class="ar-blog-text">
+                <h2><?php echo CHtml::encode($post->title); ?></h2>
+                <p><?php echo CHtml::encode($post->content); ?></p>
+              </div>
+              <small class="ar-blog-bottom"><?php echo CHtml::encode(date("d/m/Y H:m",$post->update_time)); ?></small>
+            </div>
+          </article>
+        <?php endforeach; ?>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="ar-description">
   <div class="container">
     <div class="row">
@@ -161,27 +182,6 @@ $this->pageTitle=Yii::app()->name;
             <img src="https://placehold.co/1920x1080" alt="">
           </div>
         </article>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="ar-blog">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <?php foreach($posts as $post): ?>
-          <article class="ar-blog-article" style="--tag-color:<?php  echo CHtml::encode(Tag::getTag($post->tag)['color']); ?>">
-            <div class="ar-blog-wrapper">
-              <h6 class="ar-blog-top"><?php echo CHtml::encode(Tag::getTag($post->tag)['name']); ?></h6>
-              <div class="ar-blog-text">
-                <h2><?php echo CHtml::encode($post->title); ?></h2>
-                <p><?php echo CHtml::encode($post->content); ?></p>
-              </div>
-              <small class="ar-blog-bottom"><?php echo CHtml::encode(date("d/m/Y H:m",$post->create_time)); ?></small>
-            </div>
-          </article>
-        <?php endforeach; ?>
       </div>
     </div>
   </div>

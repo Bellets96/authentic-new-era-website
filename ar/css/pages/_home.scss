@@ -5,6 +5,7 @@
   width: 100%;
   position: relative;
   background-color: var(--black);
+  box-shadow: 0px 2rem 2rem 0px var(--black);
 
   .ar-navbar {
     position: absolute;
@@ -144,6 +145,10 @@
           width: calc(100% - 0.6rem);
           height: calc(100% - 0.6rem);
           bottom: 0.3rem;
+
+          i {
+            transform: scale(2.5) translateX(0.1rem);
+          }
         }
 
         .ar-btn-image {

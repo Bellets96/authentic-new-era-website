@@ -19,6 +19,37 @@ main {
     min-height: 100svh;
 }
 
-.error {
+.error,
+.ar-error-message {
     color: var(--bs-danger);
+}
+
+.asc::after {
+    display: inline-block;
+    font-family: bootstrap-icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: -.125em;
+    -webkit-font-smoothing: antialiased;
+    content: "\F229";
+    transition: all 300ms ease-in-out;
+    //TODO controllare qusto
+}
+
+.desc::after {
+    display: inline-block;
+    font-family: bootstrap-icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: -.125em;
+    -webkit-font-smoothing: antialiased;
+    content: "\F229";
+    transition: all 300ms ease-in-out;
+    //TODO controllare qusto
 }
