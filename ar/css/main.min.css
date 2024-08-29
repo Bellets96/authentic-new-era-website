@@ -597,7 +597,7 @@ html.mobile .pswp .pswp__ui .pswp__button.pswp__button--arrow--right, html.mobil
   align-items: center;
   gap: 1rem;
 }
-.ar-header .ar-header-wrapper ul li:not(:first-child)::after {
+.ar-header .ar-header-wrapper ul li::after {
   content: "";
   display: block;
   height: 1px;
