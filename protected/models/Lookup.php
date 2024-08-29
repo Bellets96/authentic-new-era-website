@@ -11,6 +11,7 @@
 class Lookup extends CActiveRecord
 {
 	private static $_items = array();
+    private static $_colors = array(); 
 
 	/**
 	 * Returns the static model of the specified AR class.
@@ -75,4 +76,37 @@ class Lookup extends CActiveRecord
 			self::$_items[$type][$model->code] = $model->name;
 		}
 	}
+
+	/**
+     * Returns the color for the specified type and code.
+     * @param string $type the item type (e.g. 'PostStatus').
+     * @param integer $code the item code (corresponding to the 'code' column value)
+     * @return string the color associated with the specified type and code. False is returned if the item type or code does not exist.
+     */
+    public static function color($type, $code)
+    {
+        if (!isset(self::$_colors[$type]))
+            self::loadColors($type);
+        return isset(self::$_colors[$type][$code]) ? self::$_colors[$type][$code] : false;
+    }
+
+	/**
+     * Loads the lookup colors for the specified type from the database.
+     * @param string $type the item type
+     */
+    private static function loadColors($type)
+    {
+        self::$_colors[$type] = array();
+        $models = self::model()->findAll(
+            array(
+                'condition' => 'type=:type',
+                'params' => array(':type' => $type),
+                'order' => 'position',
+            )
+        );
+
+        foreach ($models as $model) {
+            self::$_colors[$type][$model->code] = $model->color;
+        }
+    }
 }

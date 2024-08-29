@@ -2,20 +2,18 @@
 /* @var $this PostController */
 /* @var $model Post */
 
-$this->breadcrumbs=array(
-	'Posts'=>array('index'),
-	$model->title=>array('view','id'=>$model->id),
-	'Update',
-);
-
-$this->menu=array(
-	array('label'=>'List Post', 'url'=>array('index')),
-	array('label'=>'Create Post', 'url'=>array('create')),
-	array('label'=>'View Post', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage Post', 'url'=>array('admin')),
-);
 ?>
 
-<h1>Update Post <?php echo $model->id; ?></h1>
-
-<?php $this->renderPartial('_form', array('model'=>$model)); ?>
+<section class="ar-form">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="ar-form-wrapper">
+					<h1>Modifica <?php echo $model->title; ?></h1>
+					
+					<?php $this->renderPartial('_form', array('model'=>$model)); ?>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

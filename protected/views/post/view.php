@@ -2,32 +2,39 @@
 /* @var $this PostController */
 /* @var $model Post */
 
-$this->breadcrumbs=array(
-	'Posts'=>array('index'),
-	$model->title,
-);
-
-$this->menu=array(
-	array('label'=>'List Post', 'url'=>array('index')),
-	array('label'=>'Create Post', 'url'=>array('create')),
-	array('label'=>'Update Post', 'url'=>array('update', 'id'=>$model->id)),
-	array('label'=>'Delete Post', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Post', 'url'=>array('admin')),
-);
 ?>
 
-<h1>View Post #<?php echo $model->id; ?></h1>
+<section class="ar-view">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="ar-view-wrapper">
+					<?php $this->widget('zii.widgets.CDetailView', array(
+						'data'=>$model,
+						'attributes'=>array(
+							'title',
+							'content',
+							array(
+								'name' => 'category',
+								'value' => Lookup::item("PostCategory",$model->category),
 
-<?php $this->widget('zii.widgets.CDetailView', array(
-	'data'=>$model,
-	'attributes'=>array(
-		'id',
-		'title',
-		'content',
-		'tag',
-		'status',
-		'create_time',
-		'update_time',
-		'author_id',
-	),
-)); ?>
+							),
+							array(
+								'name' => 'status',
+								'value' => Lookup::item("PostStatus",$model->status),
+							),		
+							array(
+								'name' => 'create_time',
+								'value' => CHtml::encode(date("d/m/Y H:m",$model->create_time)),
+							),
+							array(
+								'name' => 'update_time',
+								'value' => CHtml::encode(date("d/m/Y H:m",$model->update_time)),
+							),
+						),
+					)); ?> 
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,10 +1,15 @@
 .ar-form {
     .ar-form-wrapper {
-        margin: 12svh auto 0 auto;
-        padding: 1rem;
+        min-height: 50svh;
+        align-content: center;
+        padding-block: 2rem;
         border-radius: 1rem;
         width: 100%;
         max-width: 670px;
+
+        h1 {
+            color: var(--ar-white);
+        }
 
         form {
             display: flex;
@@ -19,25 +24,37 @@
                 display: flex;
                 align-items: center;
 
+                .ar-textarea {
+                    padding-block: 1rem;
+                    width: 100%;
+                }
+
                 label {
                     position: absolute;
                     align-content: center;
+                    top: -0.2rem;
                     left: 1rem;
                     padding-inline: 0.5rem;
+                    transform: translateY(70%);
                     transition: all 200ms ease;
                 }
 
-                input {
+                input,
+                textarea,
+                select {
                     padding: 1rem 2rem;
                     width: 100%;
+                    border: none;
+                    border-radius: 1rem;
+                    resize: none;
 
                     &:not(:placeholder-shown),
                     &:focus {
-                        + label{
-                            transform: translateY(-80%) scale(0.8);
+                        + label{    
+                            transform: scale(0.8);
                         }
-                        ~ .ar-error-message {
-                            transform: translateY(80%) scale(0.8);
+                        ~ .ar-error-message {    
+                            transform: scale(0.8);
                             left: 0.4rem;
                         }
                     }
@@ -47,6 +64,8 @@
                     position: absolute;
                     align-content: center;
                     left: 6rem;
+                    bottom: -0.2rem;
+                    transform: translateY(-90%);
                     padding-inline: 0.5rem;
                     transition: all 200ms ease;
                     pointer-events: none;

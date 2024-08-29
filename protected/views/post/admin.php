@@ -3,7 +3,6 @@
 /* @var $model Post */
 
 ?>
-
 <section class="ar-admin">
 	<div class="container">
 		<div class="row">

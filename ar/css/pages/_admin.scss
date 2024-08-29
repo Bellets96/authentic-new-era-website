@@ -5,14 +5,16 @@
         background: var(--ar-white);
         border-radius: 0.5rem;
 
-        table {
-            border-collapse: separate;    
+        table {   
             width: 100%;
             
             thead {
+                border-color: transparent;
+                border-width: unset;
+                border-bottom: 1px solid var(--black);
                 
                 th {
-                    border: 1px solid var(--ar-blue);
+                    border: 1px solid var(--black);
                     
                     &:first-child {
                         border-top-left-radius: 0.5rem;
@@ -23,7 +25,7 @@
                 }
                 
                 td {
-                    border: 1px solid var(--ar-blue);
+                    border: 1px solid var(--black);
 
                     input {
                         width: 100%;
@@ -31,8 +33,12 @@
                 }
             }
             tbody {
+                border-color: transparent;
+                border-width: unset;
+                border-top: 1px solid var(--black);
+
                 td {
-                    border: 1px solid var(--ar-blue);
+                    border: 1px solid var(--black);
                 }
 
                 tr:last-child{
@@ -69,6 +75,13 @@
             .odd {
                 background-color: var(--ar-teal);
             }
+        }
+
+        input, 
+        select {
+            height: 2rem;
+            border: 1px solid var(--black);
+            border-radius: 0.5rem;
         }
     }
 }

@@ -108,9 +108,9 @@ $this->pageTitle=Yii::app()->name;
     <div class="row">
       <div class="col-12">
         <?php foreach($posts as $post): ?>
-          <article class="ar-blog-article" style="--tag-color:<?php  echo CHtml::encode(Tag::getTag($post->tag)['color']); ?>">
+          <article class="ar-blog-article" style="--tag-color:<?php  echo CHtml::encode(Lookup::color('PostCategory',$post->category)); ?>">
             <div class="ar-blog-wrapper">
-              <h6 class="ar-blog-top"><?php echo CHtml::encode(Tag::getTag($post->tag)['name']); ?></h6>
+              <h6 class="ar-blog-top"><?php echo CHtml::encode(Lookup::item('PostCategory',$post->category)); ?></h6>
               <div class="ar-blog-text">
                 <h2><?php echo CHtml::encode($post->title); ?></h2>
                 <p><?php echo CHtml::encode($post->content); ?></p>

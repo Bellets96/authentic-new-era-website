@@ -20,8 +20,8 @@
 									'encodeLabel' => false,
 									'items' => array(
 										array('label' => 'Home', 'url' => Yii::app()->homeUrl, 'itemOptions' => array('class' => 'nav-item')),
+										array('label' => 'Crea Post', 'url' => array('/post/create'), 'itemOptions' => array('class' => 'nav-item')),
 										array('label' => 'Posts', 'url' => array('/post/admin'), 'itemOptions' => array('class' => 'nav-item')),
-										array('label' => 'Tags', 'url' => array('/tag/admin'), 'itemOptions' => array('class' => 'nav-item')),
 										array('label' => 'Logout (' . Yii::app()->user->name . ')', 'url' => array('/site/logout'), 'itemOptions' => array('class' => 'nav-item')),
 									),
 									'htmlOptions' => array('class' => 'navbar-nav ms-auto')

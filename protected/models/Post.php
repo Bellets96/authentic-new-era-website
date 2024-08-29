@@ -43,7 +43,7 @@ class Post extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title, content, status, author_id', 'required'),
+			array('title, content, status, author_id', 'required', 'message'=>'non può essere nullo.'),
 			array('status, category, create_time, update_time, author_id', 'numerical', 'integerOnly'=>true),
 			array('title', 'length', 'max'=>128),
 			// The following rule is used by search().
@@ -72,13 +72,13 @@ class Post extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'title' => 'Title',
-			'content' => 'Content',
-			'category' => 'Category',
-			'status' => 'Status',
-			'create_time' => 'Create Time',
-			'update_time' => 'Update Time',
-			'author_id' => 'Author',
+			'title' => 'Titolo',
+			'content' => 'Contenuto',
+			'category' => 'Categoria',
+			'status' => 'Stato',
+			'create_time' => 'Creato il',
+			'update_time' => 'Aggiornato il',
+			'author_id' => 'Autore',
 		);
 	}
 

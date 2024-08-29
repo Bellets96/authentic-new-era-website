@@ -17,8 +17,8 @@
 	<?php echo CHtml::encode($data->content); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('tag')); ?>:</b>
-	<?php echo CHtml::encode($data->tag); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('category')); ?>:</b>
+	<?php echo CHtml::encode($data->category); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('status')); ?>:</b>

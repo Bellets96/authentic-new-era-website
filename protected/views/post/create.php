@@ -2,17 +2,18 @@
 /* @var $this PostController */
 /* @var $model Post */
 
-$this->breadcrumbs=array(
-	'Posts'=>array('index'),
-	'Create',
-);
-
-$this->menu=array(
-	array('label'=>'List Post', 'url'=>array('index')),
-	array('label'=>'Manage Post', 'url'=>array('admin')),
-);
 ?>
 
-<h1>Create Post</h1>
-
-<?php $this->renderPartial('_form', array('model'=>$model)); ?>
+<section class="ar-form">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="ar-form-wrapper">
+					<h1>Crea Post</h1>
+					
+					<?php $this->renderPartial('_form', array('model'=>$model)); ?>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

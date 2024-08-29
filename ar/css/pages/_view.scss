@@ -1,0 +1,59 @@
+.ar-view {
+    padding-block: 2rem;
+
+    .ar-view-wrapper {
+        background: var(--ar-white);
+        border-radius: 0.5rem;
+
+        table {
+            border-radius: 0.5rem;
+            width: 100%;
+
+            tbody {
+                border-color: transparent;
+                border-width: unset;
+
+                tr {
+                    &:first-child {
+                        border-top-left-radius: 0.5rem;
+                        border-top-right-radius: 0.5rem;
+                        
+                        th {
+                            border-top-left-radius: 0.5rem;
+                        }
+                        
+                        td {
+                            border-top-right-radius: 0.5rem;
+                        }
+                    }
+                    &:last-child {
+                        border-bottom-left-radius: 0.5rem;
+                        border-bottom-right-radius: 0.5rem;
+                        
+                        th {
+                            border-bottom-left-radius: 0.5rem;
+                        }
+                        
+                        td {
+                            border-bottom-right-radius: 0.5rem;
+                        }
+                    }
+
+                    th,
+                    td {
+                        border: 1px solid var(--black);
+                        padding: 0.5rem 1rem;
+                    }
+
+                    &.even {
+                        background-color: var(--ar-blue);
+                    }
+                    
+                    &.odd {
+                        background-color: var(--ar-teal);
+                    }
+                }
+            }
+        }
+    }
+}

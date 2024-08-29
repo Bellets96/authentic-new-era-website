@@ -4,8 +4,6 @@
 /* @var $form CActiveForm */
 ?>
 
-<div class="form">
-
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'post-form',
 	// Please note: When you enable ajax validation, make sure the corresponding
@@ -15,56 +13,34 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
-
-	<?php echo $form->errorSummary($model); ?>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'title'); ?>
-		<?php echo $form->textField($model,'title',array('size'=>60,'maxlength'=>128)); ?>
-		<?php echo $form->error($model,'title'); ?>
+	<div class="ar-input-group">
+		<?php echo $form->textField($model,'title',array('placeholder'=>' ')); ?>
+		<?php echo $form->label($model,'title'); ?>
+		<?php echo $form->error($model,'title', array('class'=>'ar-error-message')); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'content'); ?>
-		<?php echo $form->textArea($model,'content',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'content'); ?>
+	<div class="ar-input-group">
+		<div class="ar-textarea">
+			<?php echo $form->textArea($model,'content',array('placeholder'=>' ', 'rows' => 6)); ?>
+			<?php echo $form->label($model,'content'); ?>
+			<?php echo $form->error($model,'content', array('class'=>'ar-error-message')); ?>
+		</div>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'tag'); ?>
-		<?php echo $form->textField($model,'tag'); ?>
-		<?php echo $form->error($model,'tag'); ?>
+	<div class="ar-input-group">
+		<?php echo $form->dropdownList($model,'category', Lookup::items('PostCategory'), array('placeholder'=>' ')); ?>
+		<?php echo $form->label($model,'category'); ?>
+		<?php echo $form->error($model,'category', array('class'=>'ar-error-message')); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'status'); ?>
-		<?php echo $form->textField($model,'status'); ?>
-		<?php echo $form->error($model,'status'); ?>
+	<div class="ar-input-group">
+		<?php echo $form->dropdownList($model,'status', Lookup::items('PostStatus'), array('placeholder'=>' ')); ?>
+		<?php echo $form->label($model,'status'); ?>
+		<?php echo $form->error($model,'status', array('class'=>'ar-error-message')); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'create_time'); ?>
-		<?php echo $form->textField($model,'create_time'); ?>
-		<?php echo $form->error($model,'create_time'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'update_time'); ?>
-		<?php echo $form->textField($model,'update_time'); ?>
-		<?php echo $form->error($model,'update_time'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'author_id'); ?>
-		<?php echo $form->textField($model,'author_id'); ?>
-		<?php echo $form->error($model,'author_id'); ?>
-	</div>
-
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+	<div class="ar-btn-group">
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Crea' : 'Salva', array('class'=>'ar-btn')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
-
-</div><!-- form -->
