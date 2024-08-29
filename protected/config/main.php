@@ -50,6 +50,7 @@ return array(
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 				'login'=>'site/login',
 				'admin'=>'post/admin',
+				'portale'=>'site/portale',
 			),
 		),
 

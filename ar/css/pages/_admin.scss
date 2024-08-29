@@ -56,7 +56,7 @@
                     color: var(--ar-green);
                 }
                 .bi-eye-fill {
-                    color: var(--ar-white);
+                    color: var(--ar-blue);
                 }
                 .bi-trash-fill {
                     color: var(--ar-red);
@@ -66,14 +66,6 @@
             
             th,td {
                 padding: 0.5rem 1rem;
-            }
-            
-            .even {
-                background-color: var(--ar-blue);
-            }
-            
-            .odd {
-                background-color: var(--ar-teal);
             }
         }
 

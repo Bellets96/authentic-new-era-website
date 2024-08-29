@@ -1002,19 +1002,13 @@ html.mobile .pswp .pswp__ui .pswp__button.pswp__button--arrow--right, html.mobil
   color: var(--ar-green);
 }
 .ar-admin .ar-admin-wrapper table tbody .bi-eye-fill {
-  color: var(--ar-white);
+  color: var(--ar-blue);
 }
 .ar-admin .ar-admin-wrapper table tbody .bi-trash-fill {
   color: var(--ar-red);
 }
 .ar-admin .ar-admin-wrapper table th, .ar-admin .ar-admin-wrapper table td {
   padding: 0.5rem 1rem;
-}
-.ar-admin .ar-admin-wrapper table .even {
-  background-color: var(--ar-blue);
-}
-.ar-admin .ar-admin-wrapper table .odd {
-  background-color: var(--ar-teal);
 }
 .ar-admin .ar-admin-wrapper input,
 .ar-admin .ar-admin-wrapper select {
@@ -1063,11 +1057,8 @@ html.mobile .pswp .pswp__ui .pswp__button.pswp__button--arrow--right, html.mobil
   border: 1px solid var(--black);
   padding: 0.5rem 1rem;
 }
-.ar-view .ar-view-wrapper table tbody tr.even {
-  background-color: var(--ar-blue);
-}
-.ar-view .ar-view-wrapper table tbody tr.odd {
-  background-color: var(--ar-teal);
+.ar-view .ar-view-wrapper table tbody tr.even, .ar-view .ar-view-wrapper table tbody tr.odd {
+  background-color: var(--ar-white);
 }
 
 main {

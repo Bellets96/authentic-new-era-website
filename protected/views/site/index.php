@@ -49,12 +49,42 @@ $this->pageTitle=Yii::app()->name;
         </a>
       </li>
       <li>
-        <a class="ar-btn-home" target="_blank" href="#"> 
+        <a class="ar-btn-home" target="_blank" href="/portale"> 
           <span class="ar-btn-text">
             Accedi al portale del cittadino
           </span>
           <span class="ar-btn-image">
             <i class="bi bi-person-bounding-box"></i>
+          </span>    
+        </a>
+      </li>
+      <li>
+        <a class="ar-btn-home" target="_blank" href="#"> 
+          <span class="ar-btn-text">
+            Instagram
+          </span> 
+          <span class="ar-btn-image">
+            <i class="bi bi-instagram"></i>
+          </span>    
+        </a>
+      </li>
+      <li>
+        <a class="ar-btn-home" target="_blank" href="#"> 
+            <span class="ar-btn-text">
+              TikTok
+            </span>
+          <span class="ar-btn-image">
+            <i class="bi bi-tiktok"></i>
+          </span>    
+        </a>
+      </li>
+      <li>
+        <a class="ar-btn-home" target="_blank" href="#"> 
+          <span class="ar-btn-text">
+            YouTube
+          </span> 
+          <span class="ar-btn-image">
+            <i class="bi bi-youtube"></i>
           </span>    
         </a>
       </li>
@@ -67,36 +97,7 @@ $this->pageTitle=Yii::app()->name;
     <div class="row">
       <div class="col-12">
         <ul>
-            <li>
-              <a class="ar-btn-social" target="_blank" href="#"> 
-                <span class="ar-btn-text">
-                  Instagram
-                </span> 
-                <span class="ar-btn-image">
-                  <i class="bi bi-instagram"></i>
-                </span>    
-              </a>
-            </li>
-            <li>
-              <a class="ar-btn-social" target="_blank" href="#"> 
-                  <span class="ar-btn-text">
-                    TikTok
-                  </span>
-                <span class="ar-btn-image">
-                  <i class="bi bi-tiktok"></i>
-                </span>    
-              </a>
-            </li>
-            <li>
-              <a class="ar-btn-social" target="_blank" href="#"> 
-                <span class="ar-btn-text">
-                  YouTube
-                </span> 
-                <span class="ar-btn-image">
-                  <i class="bi bi-youtube"></i>
-                </span>    
-              </a>
-            </li>
+           
         </ul>
      </div>
     </div>

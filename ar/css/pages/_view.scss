@@ -45,12 +45,9 @@
                         padding: 0.5rem 1rem;
                     }
 
-                    &.even {
-                        background-color: var(--ar-blue);
-                    }
-                    
-                    &.odd {
-                        background-color: var(--ar-teal);
+                    &.even,
+                    &.odd  {
+                        background-color: var(--ar-white);
                     }
                 }
             }

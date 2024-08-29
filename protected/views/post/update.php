@@ -2,6 +2,7 @@
 /* @var $this PostController */
 /* @var $model Post */
 
+$this->pageTitle=Yii::app()->name . ' - Modifica Post';
 ?>
 
 <section class="ar-form">
