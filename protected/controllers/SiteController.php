@@ -46,6 +46,7 @@ class SiteController extends Controller
 	 */
 	public function actionError()
 	{
+		$this->layout = '//layouts/main';
 		if($error=Yii::app()->errorHandler->error)
 		{
 			if(Yii::app()->request->isAjaxRequest)
@@ -60,6 +61,7 @@ class SiteController extends Controller
 	 */
 	public function actionLogin()
 	{
+		$this->layout = '//layouts/main';
 		$model=new LoginForm;
 
 		// if it is ajax validation request
@@ -75,7 +77,7 @@ class SiteController extends Controller
 			$model->attributes=$_POST['LoginForm'];
 			// validate user input and redirect to the previous page if valid
 			if($model->validate() && $model->login())
-				$this->redirect('post/admin');
+				$this->redirect('/admin');
 		}
 		// display the login form
 		$this->render('login',array('model'=>$model));
@@ -87,7 +89,7 @@ class SiteController extends Controller
 	public function actionLogout()
 	{
 		Yii::app()->user->logout();
-		$this->redirect(Yii::app()->homeUrl);
+		$this->redirect('login');
 	}
 
 	public function actionPortale()
