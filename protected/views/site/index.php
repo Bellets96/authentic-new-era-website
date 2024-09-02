@@ -5,10 +5,9 @@ $this->pageTitle=Yii::app()->name;
 ?>
 
 <section class="ar-hero">
-  <video class="ar-home-video" muted autoplay>
-    <source media="(min-width: 768px)" src="<?php echo Yii::app()->request->baseUrl; ?>/ar/video/video_ar.webm" type="video/webm">
-    <source media="(max-width: 767px)" src="https://videos.pexels.com/video-files/3832278/3832278-uhd_1440_2732_25fps.mp4" type="video/mp4">
-  </video>
+  <div class="ar-home-img">
+    <img src="<?php echo Yii::app()->request->baseUrl; ?>/ar/img/logo_ar_full.png" alt="">
+  </div>
   <nav class="ar-navbar">
     <ul>
       <li>
@@ -49,7 +48,7 @@ $this->pageTitle=Yii::app()->name;
         </a>
       </li>
       <li>
-        <a class="ar-btn-home" target="_blank" href="/portale"> 
+        <a class="ar-btn-home" href="/portale"> 
           <span class="ar-btn-text">
             Accedi al portale del cittadino
           </span>

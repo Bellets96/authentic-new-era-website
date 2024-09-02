@@ -194,6 +194,10 @@ ol, ul, dl {
   padding: 0;
 }
 
+h1,h2,h3,h4,h5,h6 {
+  margin: 0 !important;
+}
+
 @media (min-width: 1600px) {
   .container-lg,
   .container-md,

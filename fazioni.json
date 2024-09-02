@@ -1,0 +1,92 @@
+{
+	"pds":
+	{
+		"label": "Polizia di Stato",
+		"img": "<?php echo Yii::app()->request->baseUrl; ?>/ar/img/logo_ar.png",
+		"siteUrl": "pds.authentic.it",
+		"urls":
+		{
+			"bandi":
+			{
+				"label": "Bandi",
+				"url": "",
+                "img":""
+			},
+			"porto":
+			{
+				"label": "Porto d'armi",
+				"url": ""
+			}
+		}
+	},
+	"cc":
+	{
+		"label": "Carabinieri",
+		"img": "<?php echo Yii::app()->request->baseUrl; ?>/ar/img/logo_ar.png",
+		"siteUrl": "cc.authentic.it",
+		"urls":
+		{
+			"bandi":
+			{
+				"label": "Bandi",
+				"url": ""
+			}
+		}
+	},
+	"gdf":
+	{
+		"label": "Guardia di Finanza",
+		"img": "<?php echo Yii::app()->request->baseUrl; ?>/ar/img/logo_ar.png",
+		"siteUrl": "gdf.authentic.it",
+		"urls":
+		{
+			"bandi":
+			{
+				"label": "Bandi",
+				"url": ""
+			}
+		}
+	},
+	"vvf":
+	{
+		"label": "Vigili del Fuoco",
+		"img": "<?php echo Yii::app()->request->baseUrl; ?>/ar/img/logo_ar.png",
+		"siteUrl": "vvf.authentic.it",
+		"urls":
+		{
+			"bandi":
+			{
+				"label": "Bandi",
+				"url": ""
+			}
+		}
+	},
+	"asl":
+	{
+		"label": "ASL e ARES",
+		"img": "<?php echo Yii::app()->request->baseUrl; ?>/ar/img/logo_ar.png",
+		"siteUrl": "asl.authentic.it",
+		"urls":
+		{
+			"bandi":
+			{
+				"label": "Bandi",
+				"url": ""
+			}
+		}
+	},
+	"procura":
+	{
+		"label": "Procura e Tribunale",
+		"img": "<?php echo Yii::app()->request->baseUrl; ?>/ar/img/logo_ar.png",
+		"siteUrl": "procura.authentic.it",
+		"urls":
+		{
+			"bandi":
+			{
+				"label": "Bandi",
+				"url": ""
+			}
+		}
+	}
+}
