@@ -37,8 +37,8 @@
 
 <body>
 
-	<main>
-	
+	<main style="<?php if (Yii::app()->controller->action->id == 'portale' || Yii::app()->controller->action->id == 'page') echo 'background:var(--ar-white)' ?>" >
+
 		<?php if(isset($this->breadcrumbs)):?>
 			<?php $this->widget('zii.widgets.CBreadcrumbs', array(
 				'links'=>$this->breadcrumbs,

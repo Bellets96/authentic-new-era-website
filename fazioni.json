@@ -3,7 +3,7 @@
     "label": "Polizia di Stato",
     "img": "<?php echo Yii::app()->request->baseUrl; ?>/ar/img/logo_ar.png",
     "siteUrl": "https://pds.authentic.it",
-    "color": "#ff0000",
+    "color": "#005295",
     "urls": {
       "bandi": {
         "label": "Bandi",
@@ -31,7 +31,7 @@
     "label": "Carabinieri",
     "img": "<?php echo Yii::app()->request->baseUrl; ?>/ar/img/logo_ar.png",
     "siteUrl": "https://cc.authentic.it",
-    "color": "",
+    "color": "#0b1a54",
     "urls": {
       "bandi": {
         "label": "Bandi",
@@ -44,7 +44,7 @@
     "label": "Guardia di Finanza",
     "img": "<?php echo Yii::app()->request->baseUrl; ?>/ar/img/logo_ar.png",
     "siteUrl": "https://gdf.authentic.it",
-    "color": "",
+    "color": "#fed505",
     "urls": {
       "bandi": {
         "label": "Bandi",
@@ -57,7 +57,7 @@
     "label": "Vigili del Fuoco",
     "img": "<?php echo Yii::app()->request->baseUrl; ?>/ar/img/logo_ar.png",
     "siteUrl": "https://vvf.authentic.it",
-    "color": "",
+    "color": "#720000",
     "urls": {
       "bandi": {
         "label": "Bandi",
@@ -70,7 +70,7 @@
     "label": "ASL e ARES",
     "img": "<?php echo Yii::app()->request->baseUrl; ?>/ar/img/logo_ar.png",
     "siteUrl": "https://asl.authentic.it",
-    "color": "",
+    "color": "#2D4F85",
     "urls": {
       "bandi": {
         "label": "Bandi",
@@ -83,7 +83,7 @@
     "label": "Procura e Tribunale",
     "img": "<?php echo Yii::app()->request->baseUrl; ?>/ar/img/logo_ar.png",
     "siteUrl": "https://procura.authentic.it",
-    "color": "",
+    "color": "#bc9e82",
     "urls": {
       "bandi": {
         "label": "Bandi",

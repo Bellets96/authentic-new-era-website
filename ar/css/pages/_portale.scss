@@ -2,10 +2,7 @@
   padding-block: 2rem;
 
   .ar-portale-title {
-    background: var(--ar-white);
-    border-radius: 0.5rem;
     padding: 1rem 2rem;
-    width: fit-content;
     margin-bottom: 2rem;
 
     a {
@@ -42,12 +39,9 @@
   }
 
   .ar-portale-wrapper {
-    background: var(--ar-white);
-    border-radius: 0.5rem;
     padding: 1rem 2rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
     gap: 2rem;
 
