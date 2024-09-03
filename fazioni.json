@@ -1,93 +1,133 @@
 {
   "pds": {
     "label": "Polizia di Stato",
-    "img": "<?php echo Yii::app()->request->baseUrl; ?>/ar/img/logo_ar.png",
-    "siteUrl": "https://pds.authentic.it",
+    "img": "<?php echo Yii::app()->request->baseUrl; ?>/ar/img/fazioni/pds.png",
+    "siteUrl": "",
     "color": "#005295",
     "urls": {
-      "bandi": {
-        "label": "Bandi",
-        "url": "",
+      "concorso": {
+        "label": "Concorso",
+        "url": "https://forms.gle/7NQvd12cVW3oinQ3A",
         "img": "/ar/img/logo_ar.png"
       },
-      "porto": {
-        "label": "Porto d'armi",
-        "url": "",
+      "studio": {
+        "label": "Richiesta rilascio porto d'armi",
+        "url": "https://forms.gle/HnjE6uxWBzm4HajK6",
         "img": "/ar/img/logo_ar.png"
       },
-      "bandi2": {
-        "label": "Bandi",
-        "url": "",
-        "img": "/ar/img/logo_ar.png"
-      },
-      "porto2": {
-        "label": "Porto d'armi",
-        "url": "",
+      "appuntamento": {
+        "label": "Richiesta appuntamento",
+        "url": "https://forms.gle/i9fH1gLK4aAGaEW36",
         "img": "/ar/img/logo_ar.png"
       }
     }
   },
   "cc": {
     "label": "Carabinieri",
-    "img": "<?php echo Yii::app()->request->baseUrl; ?>/ar/img/logo_ar.png",
-    "siteUrl": "https://cc.authentic.it",
+    "img": "<?php echo Yii::app()->request->baseUrl; ?>/ar/img/fazioni/cc.png",
+    "siteUrl": "",
     "color": "#0b1a54",
     "urls": {
-      "bandi": {
-        "label": "Bandi",
-        "url": "",
+      "concorso": {
+        "label": "Concorso",
+        "url": "https://forms.gle/uwoCVSs3EgtSmeAYA",
+        "img": "/ar/img/logo_ar.png"
+      },
+      "appuntamento": {
+        "label": "Richiesta appuntamento",
+        "url": "https://forms.gle/TEeKXojU9dMJH7cs6",
         "img": "/ar/img/logo_ar.png"
       }
     }
   },
   "gdf": {
     "label": "Guardia di Finanza",
-    "img": "<?php echo Yii::app()->request->baseUrl; ?>/ar/img/logo_ar.png",
-    "siteUrl": "https://gdf.authentic.it",
+    "img": "<?php echo Yii::app()->request->baseUrl; ?>/ar/img/fazioni/gdf.png",
+    "siteUrl": "https://sites.google.com/view/guardiadifinanzaauthenticrp/home-page",
     "color": "#fed505",
     "urls": {
-      "bandi": {
-        "label": "Bandi",
-        "url": "",
+      "concorso": {
+        "label": "Concorso",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSd5idwKvZw3ldZPMXl3h7d7TmgUK14qMSeOzUOy-M2Y9rCPAQ/viewform",
+        "img": "/ar/img/logo_ar.png"
+      },
+      "tabacchi": {
+        "label": "Richiesta Tabacchi / Monopoli",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLScGSAAwO3DxCA2q7diDJsvEOYKKy0G684qi8FtYUHLbBSEu-g/viewform",
+        "img": "/ar/img/logo_ar.png"
+      },
+      "dipendenti": {
+        "label": "Dichiarazione dipendenti",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSfD29LjMati55FKelMITUZRt3D5y9JeTvyqDcnmm9m_h6Hsow/viewform",
+        "img": "/ar/img/logo_ar.png"
+      },
+      "appuntamento": {
+        "label": "Richiesta appuntamento",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSeomi9Jgads8a_HwyVVzqGgQCoq6izcbM2S69c8ZUrH2WFuWQ/viewfor",
         "img": "/ar/img/logo_ar.png"
       }
     }
   },
   "vvf": {
     "label": "Vigili del Fuoco",
-    "img": "<?php echo Yii::app()->request->baseUrl; ?>/ar/img/logo_ar.png",
-    "siteUrl": "https://vvf.authentic.it",
+    "img": "<?php echo Yii::app()->request->baseUrl; ?>/ar/img/fazioni/vvf.png",
+    "siteUrl": "",
     "color": "#720000",
     "urls": {
-      "bandi": {
-        "label": "Bandi",
-        "url": "",
+      "concorso": {
+        "label": "Concorso",
+        "url": "https://forms.gle/HCKHpff8zZS9nQR2A",
+        "img": "/ar/img/logo_ar.png"
+      },
+      "studio": {
+        "label": "Materiale di studio per il concorso",
+        "url": "https://drive.google.com/file/d/1kAZWn2sSROvh8YXO6ix9rlGHaeqbXBFd/view?usp=sharing",
+        "img": "/ar/img/logo_ar.png"
+      },
+      "scia": {
+        "label": "Compilazione SCIA",
+        "url": "https://forms.gle/19Df1sXKJoCUdNG5A",
+        "img": "/ar/img/logo_ar.png"
+      },
+      "appuntamento": {
+        "label": "Richiesta appuntamento",
+        "url": "https://forms.gle/hf5CzgmBBiWRFazP7",
         "img": "/ar/img/logo_ar.png"
       }
     }
   },
   "asl": {
     "label": "ASL e ARES",
-    "img": "<?php echo Yii::app()->request->baseUrl; ?>/ar/img/logo_ar.png",
-    "siteUrl": "https://asl.authentic.it",
+    "img": "<?php echo Yii::app()->request->baseUrl; ?>/ar/img/fazioni/asl.svg",
+    "siteUrl": "",
     "color": "#2D4F85",
     "urls": {
-      "bandi": {
-        "label": "Bandi",
-        "url": "",
+      "concorso": {
+        "label": "Concorso",
+        "url": "https://forms.gle/UF8ynKAcmj4B59dVA",
+        "img": "/ar/img/logo_ar.png"
+      },
+      "appuntamento": {
+        "label": "Richiesta appuntamento",
+        "url": "https://forms.gle/kR6pxA1Rf3YepED86",
         "img": "/ar/img/logo_ar.png"
       }
     }
   },
   "procura": {
     "label": "Procura e Tribunale",
-    "img": "<?php echo Yii::app()->request->baseUrl; ?>/ar/img/logo_ar.png",
-    "siteUrl": "https://procura.authentic.it",
+    "img": "<?php echo Yii::app()->request->baseUrl; ?>/ar/img/fazioni/procura.svg",
+    "siteUrl": "",
     "color": "#bc9e82",
     "urls": {
-      "bandi": {
-        "label": "Bandi",
-        "url": "",
+      "concorso": {
+        "label": "Concorso",
+        "url": "https://forms.gle/CLzJNTh3wnUbNjx68",
+        "img": "/ar/img/logo_ar.png"
+      },
+      "appuntamento": {
+        "label": "Richiesta appuntamento",
+        "url": "https://forms.gle/6XQxxKmv79NGWpb38",
         "img": "/ar/img/logo_ar.png"
       }
     }
