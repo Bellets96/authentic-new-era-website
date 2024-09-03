@@ -1,7 +1,7 @@
 {
   "pds": {
     "label": "Polizia di Stato",
-    "img": "<?php echo Yii::app()->request->baseUrl; ?>/ar/img/fazioni/pds.png",
+    "img": "/ar/img/fazioni/pds.png",
     "siteUrl": "",
     "color": "#005295",
     "urls": {
@@ -24,7 +24,7 @@
   },
   "cc": {
     "label": "Carabinieri",
-    "img": "<?php echo Yii::app()->request->baseUrl; ?>/ar/img/fazioni/cc.png",
+    "img": "/ar/img/fazioni/cc.png",
     "siteUrl": "",
     "color": "#0b1a54",
     "urls": {
@@ -42,7 +42,7 @@
   },
   "gdf": {
     "label": "Guardia di Finanza",
-    "img": "<?php echo Yii::app()->request->baseUrl; ?>/ar/img/fazioni/gdf.png",
+    "img": "/ar/img/fazioni/gdf.png",
     "siteUrl": "https://sites.google.com/view/guardiadifinanzaauthenticrp/home-page",
     "color": "#fed505",
     "urls": {
@@ -70,7 +70,7 @@
   },
   "vvf": {
     "label": "Vigili del Fuoco",
-    "img": "<?php echo Yii::app()->request->baseUrl; ?>/ar/img/fazioni/vvf.png",
+    "img": "/ar/img/fazioni/vvf.png",
     "siteUrl": "",
     "color": "#720000",
     "urls": {
@@ -98,7 +98,7 @@
   },
   "asl": {
     "label": "ASL e ARES",
-    "img": "<?php echo Yii::app()->request->baseUrl; ?>/ar/img/fazioni/asl.svg",
+    "img": "/ar/img/fazioni/asl.png",
     "siteUrl": "",
     "color": "#2D4F85",
     "urls": {
@@ -116,7 +116,7 @@
   },
   "procura": {
     "label": "Procura e Tribunale",
-    "img": "<?php echo Yii::app()->request->baseUrl; ?>/ar/img/fazioni/procura.svg",
+    "img": "/ar/img/fazioni/procura.png",
     "siteUrl": "",
     "color": "#bc9e82",
     "urls": {

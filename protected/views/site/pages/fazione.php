@@ -14,10 +14,18 @@ $this->pageTitle=Yii::app()->name . ' - ' . $fazioni[$fazione]['label'];
         <div class="row">
             <div class="col-12">
                 <div class="ar-portale-title">
-                    <a target="_blank" href="<?php echo($fazioni[$fazione]['siteUrl']); ?>">
-                        <h2><?php echo $fazioni[$fazione]['label'] ?></h2>
-                        <i class="bi bi-box-arrow-up-right"></i>
-                    </a>
+                    <?php if ($fazioni[$fazione]['siteUrl'] == '') {?>
+                        <div class="ar-portale-link" target="_blank" href="<?php echo $fazioni[$fazione]['siteUrl']; ?>">
+                            <h2><?php echo $fazioni[$fazione]['label'] ?></h2>
+                            <img src="<?php echo $fazioni[$fazione]['img'] ?>">
+                        </div>
+                    <?php } else {?>
+                        <a class="ar-portale-link" target="_blank" href="<?php echo $fazioni[$fazione]['siteUrl']; ?>">
+                            <h2><?php echo $fazioni[$fazione]['label'] ?></h2>
+                            <img src="<?php echo $fazioni[$fazione]['img'] ?>">
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                    <?php }?>
                 </div>
                 <div class="ar-portale-wrapper">
                     <?php foreach ($fazioni[$fazione]['urls']  as $type => $dati) { ?>

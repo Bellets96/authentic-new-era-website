@@ -1149,21 +1149,17 @@ html.mobile .pswp .pswp__ui .pswp__button.pswp__button--arrow--right, html.mobil
   background-color: var(--ar-white);
 }
 
-.ar-portale {
-  padding-block: 2rem;
-}
 .ar-portale .ar-portale-title {
   padding: 1rem 2rem;
-  margin-bottom: 2rem;
 }
-.ar-portale .ar-portale-title a {
+.ar-portale .ar-portale-title .ar-portale-link {
   display: flex;
   align-items: center;
   gap: 1rem;
   text-decoration: none;
   color: var(--black);
 }
-.ar-portale .ar-portale-title a h2::after {
+.ar-portale .ar-portale-title .ar-portale-link h2::after {
   content: "";
   display: block;
   height: 3px;
@@ -1172,11 +1168,14 @@ html.mobile .pswp .pswp__ui .pswp__button.pswp__button--arrow--right, html.mobil
   background-color: var(--custom-color, var(--ar-blue));
   transition: all 300ms ease;
 }
-.ar-portale .ar-portale-title a i {
+.ar-portale .ar-portale-title .ar-portale-link i {
   font-size: 1.5rem;
 }
-.ar-portale .ar-portale-title a:hover h2::after {
+.ar-portale .ar-portale-title .ar-portale-link:hover h2::after {
   width: 100%;
+}
+.ar-portale .ar-portale-title .ar-portale-link img {
+  max-height: 80px;
 }
 .ar-portale .ar-portale-wrapper {
   padding: 1rem 2rem;
@@ -1190,10 +1189,16 @@ html.mobile .pswp .pswp__ui .pswp__button.pswp__button--arrow--right, html.mobil
   border-radius: 0.5rem;
   padding: 1rem;
   max-width: clamp(240px, 100%, 300px);
+  height: auto;
+  aspect-ratio: 300/370;
 }
 .ar-portale .ar-portale-wrapper .ar-portale-modulo a {
   text-decoration: none;
   color: var(--black);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .ar-portale .ar-portale-wrapper .ar-portale-modulo a h3 {
   max-width: fit-content;
