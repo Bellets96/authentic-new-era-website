@@ -241,6 +241,9 @@ html.mobile a[href^="tel:"] {
 * {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.2);
 }
+*::-moz-selection {
+  background: rgba(0, 0, 0, 0.2);
+}
 *::selection {
   background: rgba(0, 0, 0, 0.2);
 }
@@ -249,7 +252,6 @@ html.mobile a[href^="tel:"] {
 }
 * img {
   -webkit-user-select: none;
-  -khtml-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
   user-select: none;
@@ -260,6 +262,7 @@ html:not(.mobile):not(.tablet) *::-webkit-scrollbar {
 }
 html:not(.mobile):not(.tablet) *::-webkit-scrollbar-track {
   background: #fff;
+  -webkit-transition: height 600ms;
   transition: height 600ms;
 }
 html:not(.mobile):not(.tablet) *::-webkit-scrollbar-thumb {
@@ -667,12 +670,19 @@ html.mobile .pswp .pswp__ui .pswp__button.pswp__button--arrow--right, html.mobil
   border-radius: 1rem;
   resize: none;
 }
+.ar-form .ar-form-wrapper form .ar-input-group input:not(:-moz-placeholder-shown) + label, .ar-form .ar-form-wrapper form .ar-input-group textarea:not(:-moz-placeholder-shown) + label, .ar-form .ar-form-wrapper form .ar-input-group select:not(:-moz-placeholder-shown) + label {
+  transform: scale(0.8);
+}
 .ar-form .ar-form-wrapper form .ar-input-group input:not(:placeholder-shown) + label, .ar-form .ar-form-wrapper form .ar-input-group input:focus + label,
 .ar-form .ar-form-wrapper form .ar-input-group textarea:not(:placeholder-shown) + label,
 .ar-form .ar-form-wrapper form .ar-input-group textarea:focus + label,
 .ar-form .ar-form-wrapper form .ar-input-group select:not(:placeholder-shown) + label,
 .ar-form .ar-form-wrapper form .ar-input-group select:focus + label {
   transform: scale(0.8);
+}
+.ar-form .ar-form-wrapper form .ar-input-group input:not(:-moz-placeholder-shown) ~ .ar-error-message, .ar-form .ar-form-wrapper form .ar-input-group textarea:not(:-moz-placeholder-shown) ~ .ar-error-message, .ar-form .ar-form-wrapper form .ar-input-group select:not(:-moz-placeholder-shown) ~ .ar-error-message {
+  transform: scale(0.8);
+  left: 0.4rem;
 }
 .ar-form .ar-form-wrapper form .ar-input-group input:not(:placeholder-shown) ~ .ar-error-message, .ar-form .ar-form-wrapper form .ar-input-group input:focus ~ .ar-error-message,
 .ar-form .ar-form-wrapper form .ar-input-group textarea:not(:placeholder-shown) ~ .ar-error-message,
@@ -866,7 +876,8 @@ html.mobile .pswp .pswp__ui .pswp__button.pswp__button--arrow--right, html.mobil
   transition: all 0.3s;
 }
 .ar-hero .ar-btn-home .ar-btn-image i,
-.ar-hero .ar-btn-home .ar-btn-image svg {
+.ar-hero .ar-btn-home .ar-btn-image svg,
+.ar-hero .ar-btn-home .ar-btn-image img {
   width: 1.1rem;
   transition: transform 0.3s;
   color: var(--black);
@@ -1190,7 +1201,7 @@ html.mobile .pswp .pswp__ui .pswp__button.pswp__button--arrow--right, html.mobil
   padding: 1rem;
   max-width: clamp(240px, 100%, 300px);
   height: auto;
-  aspect-ratio: 300/370;
+  aspect-ratio: 300/400;
 }
 .ar-portale .ar-portale-wrapper .ar-portale-modulo a {
   text-decoration: none;
@@ -1201,6 +1212,7 @@ html.mobile .pswp .pswp__ui .pswp__button.pswp__button--arrow--right, html.mobil
   justify-content: space-between;
 }
 .ar-portale .ar-portale-wrapper .ar-portale-modulo a h3 {
+  max-width: -moz-fit-content;
   max-width: fit-content;
 }
 .ar-portale .ar-portale-wrapper .ar-portale-modulo a h3::after {
@@ -1214,6 +1226,7 @@ html.mobile .pswp .pswp__ui .pswp__button.pswp__button--arrow--right, html.mobil
 }
 .ar-portale .ar-portale-wrapper .ar-portale-modulo a img {
   max-width: clamp(240px, 100%, 300px);
+  border-radius: 0.5rem;
 }
 .ar-portale .ar-portale-wrapper .ar-portale-modulo a:hover h3::after {
   width: 100%;
@@ -1277,4 +1290,4 @@ main {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: var(--ar-blue);
-}/*# sourceMappingURL=main.css.map */
+}

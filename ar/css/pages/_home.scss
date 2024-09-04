@@ -1,4 +1,4 @@
-// #region Hero 
+// #region Hero
 
 .ar-hero {
   height: 100svh;
@@ -22,12 +22,12 @@
           top: 50%;
           opacity: 0;
         }
-  
+
         50% {
           top: 50%;
           opacity: 0;
         }
-      
+
         100% {
           top: 1rem;
           opacity: 1;
@@ -42,13 +42,13 @@
           left: 50%;
           opacity: 0;
         }
-  
+
         50% {
           transform: translate(-50%, -50%);
           left: 50%;
           opacity: 0;
         }
-      
+
         100% {
           transform: translate(0, -50%);
           left: 6svw;
@@ -60,17 +60,17 @@
     ul {
       list-style: none;
 
-       @media screen and (max-width: 767px) {
-          display: flex;
-          justify-content: space-between;
-       }
+      @media screen and (max-width: 767px) {
+        display: flex;
+        justify-content: space-between;
+      }
 
       li {
         margin-block: 0.5rem;
       }
     }
 
-    @media screen and (max-width: 767px) { 
+    @media screen and (max-width: 767px) {
       top: 1rem;
       left: 1rem;
       right: 1rem;
@@ -104,7 +104,7 @@
           height: 50%;
           opacity: 1;
         }
-      
+
         100% {
           height: 50%;
           opacity: 1;
@@ -129,7 +129,7 @@
           height: 80%;
           opacity: 1;
         }
-      
+
         100% {
           transform: translate(0, -50%);
           height: 80%;
@@ -180,8 +180,9 @@
       box-shadow: 1px 1px 5px var(--ar-teal);
       transition: all 0.3s;
 
-      i, 
-      svg {
+      i,
+      svg,
+      img {
         width: 1.1rem;
         transition: transform 0.3s;
         color: var(--black);
@@ -221,7 +222,7 @@
           color: var(--white);
         }
       }
-      
+
       .ar-btn-social {
         color: var(--ar-white);
         font-size: 17px;
@@ -237,7 +238,6 @@
         height: 12rem;
         width: auto;
         aspect-ratio: 1;
-
 
         &:hover .ar-btn-image {
           width: calc(100% - 0.6rem);
@@ -263,7 +263,7 @@
           box-shadow: 1px 1px 5px var(--ar-teal);
           transition: all 0.3s;
 
-          i, 
+          i,
           svg {
             width: 1.1rem;
             transition: transform 0.3s;
@@ -273,14 +273,13 @@
       }
 
       @media screen and (max-width: 767px) {
-
         .ar-btn-social {
           height: 3rem;
 
           .ar-btn-text {
             display: none;
           }
-          
+
           .ar-btn-image {
             position: unset;
           }
@@ -325,7 +324,6 @@
     }
 
     .ar-description-image {
-
       img {
         border-radius: 1rem;
         width: 100%;
@@ -333,7 +331,7 @@
     }
   }
 
-  @media screen and (max-width:767px) {
+  @media screen and (max-width: 767px) {
     .ar-description-wrapper {
       grid-template-columns: 1fr !important;
       text-align: left;
@@ -345,7 +343,7 @@
           max-width: 100%;
         }
       }
-    }    
+    }
   }
 }
 // #endregion
@@ -360,7 +358,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
 
-    @media screen and (max-width:767px) {
+    @media screen and (max-width: 767px) {
       grid-template-columns: 1fr;
     }
   }
@@ -373,7 +371,7 @@
     box-shadow: 1px 1px 10px 5px var(--tag-color);
     border: 0.5rem solid var(--tag-color, --black);
 
-    &:nth-child(2n+1):last-child {
+    &:nth-child(2n + 1):last-child {
       grid-column: span 2;
     }
 

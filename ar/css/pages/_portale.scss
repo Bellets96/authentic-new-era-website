@@ -1,5 +1,4 @@
 .ar-portale {
-
   .ar-portale-title {
     padding: 1rem 2rem;
 
@@ -53,7 +52,7 @@
       padding: 1rem;
       max-width: clamp(240px, 100%, 300px);
       height: auto;
-      aspect-ratio: 300 / 370;
+      aspect-ratio: 300 / 400;
 
       a {
         text-decoration: none;
@@ -79,6 +78,7 @@
 
         img {
           max-width: clamp(240px, 100%, 300px);
+          border-radius: 0.5rem;
         }
 
         &:hover {

@@ -1,0 +1,209 @@
+{
+  "ip": "2.58.84.51",
+  "linkHome": {
+    "fivem": {
+      "label": "Entra nel mondo di Authentic",
+      "url": "2.58.84.51",
+      "img": "/ar/img/svg/fivem.svg"
+    },
+    "regolamento": {
+      "label": "Esplora il regolamento",
+      "url": "",
+      "img": "/ar/img/svg/book-half.svg"
+    },
+    "discord": {
+      "label": "Unisciti al Discord",
+      "url": "https://discord.gg/authenticroleplay",
+      "img": "/ar/img/svg/discord.svg"
+    },
+    "instagram": {
+      "label": "Instagram",
+      "url": "https://www.instagram.com/authenticroleplay_",
+      "img": "/ar/img/svg/instagram.svg"
+    },
+    "tiktok": {
+      "label": "TikTok",
+      "url": "https://www.tiktok.com/@authenticroleplay_",
+      "img": "/ar/img/svg/tiktok.svg"
+    },
+    "youtube": {
+      "label": "YouTube",
+      "url": "https://www.youtube.com/@authentic_roleplay",
+      "img": "/ar/img/svg/youtube.svg"
+    },
+    "twitch": {
+      "label": "Twitch",
+      "url": "https://www.twitch.tv/authenticroleplay",
+      "img": "/ar/img/svg/twitch.svg"
+    }
+  },
+
+  "descrizioneHome": {
+    "1": {
+      "titolo": "Chi siamo",
+      "testo": "Vi diamo il benvenuto su Authentic Remastered, il server roleplay ambientato nel cuore dell’Italia, fondato nel mese di Dicembre 2022 portando con determinazione il server ad essere conosciuto nel panorama italiano.",
+      "immagine": "/ar/img/homepage/img-1.png"
+    },
+    "2": {
+      "titolo": "Il nostro obiettivo",
+      "testo": "Server nato per simulare al meglio la vita reale senza tralasciare il piacere e il divertimento del gioco di ruolo; l'obiettivo è, anche in questa versione, di portare su FiveM la maggiore espressione di role play, andando a limitare la presenza di giocatori non adatti alla nostra community, pilastro importante per il nostro server, poiché siamo sempre attenti ai feedback dei giocatori.",
+      "immagine": "/ar/img/homepage/img-2.png"
+    },
+    "3": {
+      "titolo": "L'ambientazione",
+      "testo": "Il server è ambientato nella città eterna, Roma, la quale trasporterà la vostra esperienza di gioco in un viaggio senza precedenti, qui si svolgerà la vostra avventura, in un'ambientazione dove la cultura e la storia della nostra Capitale si uniscono al caratteristico caos urbano creando un'esperienza di gioco autentica e coinvolgente.",
+      "immagine": "/ar/img/homepage/img-3.png"
+    },
+    "4": {
+      "titolo": "Le nostre unicità",
+      "testo": "Esplora la nostra nuova versione, tutti gli edifici e i punti di interesse presenti all’interno del nostro server sono stati creati con cura per garantire un'esperienza di gioco realistica, come ad esempio lo Stadio Olimpico presente solamente nel nostro server.",
+      "immagine": "/ar/img/homepage/img-4.png"
+    },
+    "5": {
+      "titolo": "La tua vita",
+      "testo": "Scegli il tuo destino tra una vasta gamma di lavori, tra i quali possiamo trovare: forze dell'ordine, famiglie e bande criminali, imprenditori, soccorritori e molti altri.",
+      "immagine": "/ar/img/homepage/img-5.png"
+    },
+    "6": {
+      "titolo": "Te",
+      "testo": "Ogni scelta influenzerà la tua storia e il mondo circostante, cerca, con il tuo PG, di vivere l’esperienza di gioco che ti permetta di poter soddisfare le tue emozioni e le tue ambizioni.",
+      "immagine": "/ar/img/homepage/img-6.png"
+    }
+  },
+
+  "fazioni": {
+    "pds": {
+      "label": "Polizia di Stato",
+      "img": "/ar/img/fazioni/pds.png",
+      "siteUrl": "",
+      "color": "#005295",
+      "urls": {
+        "concorso": {
+          "label": "Concorso",
+          "url": "https://forms.gle/7NQvd12cVW3oinQ3A",
+          "img": "/ar/img/portale/concorso.png"
+        },
+        "studio": {
+          "label": "Richiesta rilascio porto d'armi",
+          "url": "https://forms.gle/HnjE6uxWBzm4HajK6",
+          "img": "/ar/img/portale/armi.png"
+        },
+        "appuntamento": {
+          "label": "Richiesta appuntamento",
+          "url": "https://forms.gle/i9fH1gLK4aAGaEW36",
+          "img": "/ar/img/portale/appuntamenti.png"
+        }
+      }
+    },
+    "cc": {
+      "label": "Carabinieri",
+      "img": "/ar/img/fazioni/cc.png",
+      "siteUrl": "",
+      "color": "#0b1a54",
+      "urls": {
+        "concorso": {
+          "label": "Concorso",
+          "url": "https://forms.gle/uwoCVSs3EgtSmeAYA",
+          "img": "/ar/img/portale/concorso.png"
+        },
+        "appuntamento": {
+          "label": "Richiesta appuntamento",
+          "url": "https://forms.gle/TEeKXojU9dMJH7cs6",
+          "img": "/ar/img/portale/appuntamenti.png"
+        }
+      }
+    },
+    "gdf": {
+      "label": "Guardia di Finanza",
+      "img": "/ar/img/fazioni/gdf.png",
+      "siteUrl": "https://sites.google.com/view/guardiadifinanzaauthenticrp/home-page",
+      "color": "#fed505",
+      "urls": {
+        "concorso": {
+          "label": "Concorso",
+          "url": "https://docs.google.com/forms/d/e/1FAIpQLSd5idwKvZw3ldZPMXl3h7d7TmgUK14qMSeOzUOy-M2Y9rCPAQ/viewform",
+          "img": "/ar/img/portale/concorso.png"
+        },
+        "monopoli": {
+          "label": "Richiesta Tabacchi / Monopoli",
+          "url": "https://docs.google.com/forms/d/e/1FAIpQLScGSAAwO3DxCA2q7diDJsvEOYKKy0G684qi8FtYUHLbBSEu-g/viewform",
+          "img": "/ar/img/portale/monopoli.jpg"
+        },
+        "dipendenti": {
+          "label": "Dichiarazione dipendenti",
+          "url": "https://docs.google.com/forms/d/e/1FAIpQLSfD29LjMati55FKelMITUZRt3D5y9JeTvyqDcnmm9m_h6Hsow/viewform",
+          "img": "/ar/img/fazioni/procura.png"
+        },
+        "appuntamento": {
+          "label": "Richiesta appuntamento",
+          "url": "https://docs.google.com/forms/d/e/1FAIpQLSeomi9Jgads8a_HwyVVzqGgQCoq6izcbM2S69c8ZUrH2WFuWQ/viewfor",
+          "img": "/ar/img/portale/appuntamenti.png"
+        }
+      }
+    },
+    "vvf": {
+      "label": "Vigili del Fuoco",
+      "img": "/ar/img/fazioni/vvf.png",
+      "siteUrl": "",
+      "color": "#720000",
+      "urls": {
+        "concorso": {
+          "label": "Concorso",
+          "url": "https://forms.gle/HCKHpff8zZS9nQR2A",
+          "img": "/ar/img/portale/concorso.png"
+        },
+        "studio": {
+          "label": "Materiale di studio per il concorso",
+          "url": "https://drive.google.com/file/d/1kAZWn2sSROvh8YXO6ix9rlGHaeqbXBFd/view?usp=sharing",
+          "img": "/ar/img/portale/vvf.svg"
+        },
+        "scia": {
+          "label": "Compilazione SCIA",
+          "url": "https://forms.gle/19Df1sXKJoCUdNG5A",
+          "img": "/ar/img/portale/vvf.svg"
+        },
+        "appuntamento": {
+          "label": "Richiesta appuntamento",
+          "url": "https://forms.gle/hf5CzgmBBiWRFazP7",
+          "img": "/ar/img/portale/appuntamenti.png"
+        }
+      }
+    },
+    "asl": {
+      "label": "ASL e ARES",
+      "img": "/ar/img/fazioni/asl.png",
+      "siteUrl": "",
+      "color": "#2D4F85",
+      "urls": {
+        "concorso": {
+          "label": "Concorso",
+          "url": "https://forms.gle/UF8ynKAcmj4B59dVA",
+          "img": "/ar/img/portale/concorso.png"
+        },
+        "appuntamento": {
+          "label": "Richiesta appuntamento",
+          "url": "https://forms.gle/kR6pxA1Rf3YepED86",
+          "img": "/ar/img/portale/appuntamenti.png"
+        }
+      }
+    },
+    "procura": {
+      "label": "Procura e Tribunale",
+      "img": "/ar/img/fazioni/procura.png",
+      "siteUrl": "",
+      "color": "#bc9e82",
+      "urls": {
+        "concorso": {
+          "label": "Concorso",
+          "url": "https://forms.gle/CLzJNTh3wnUbNjx68",
+          "img": "/ar/img/portale/concorso.png"
+        },
+        "appuntamento": {
+          "label": "Richiesta appuntamento",
+          "url": "https://forms.gle/6XQxxKmv79NGWpb38",
+          "img": "/ar/img/portale/appuntamenti.png"
+        }
+      }
+    }
+  }
+}

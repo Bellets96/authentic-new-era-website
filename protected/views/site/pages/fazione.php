@@ -1,8 +1,10 @@
 <?php 
 
-$fazioniJson = file_get_contents('fazioni.json');
+$authenticJson = file_get_contents('authentic.json');
 
-$fazioni = json_decode($fazioniJson, true);
+$authentic = json_decode($authenticJson, true);
+
+$fazioni = $authentic['fazioni'];
 
 $fazione = Yii::app()->getRequest()->getParam('fazione');
 
