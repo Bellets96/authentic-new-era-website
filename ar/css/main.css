@@ -1232,6 +1232,26 @@ html.mobile .pswp .pswp__ui .pswp__button.pswp__button--arrow--right, html.mobil
   width: 100%;
 }
 
+.ar-error {
+  padding-block: 2rem;
+}
+.ar-error .ar-error-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding-block: 2rem;
+}
+.ar-error .ar-error-wrapper h2 {
+  color: var(--ar-white);
+}
+.ar-error .ar-error-wrapper span {
+  color: var(--ar-red);
+}
+.ar-error .ar-error-wrapper h3 {
+  color: var(--ar-white);
+}
+
 main {
   background: url(../img/logo_ar_full.png) var(--black) no-repeat fixed center;
   background-size: 30%;

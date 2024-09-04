@@ -13,63 +13,64 @@
 @import "pages/admin";
 @import "pages/view";
 @import "pages/portale";
+@import "pages/error";
 
-main { 
-    background: url(../img/logo_ar_full.png) var(--black) no-repeat fixed center;
-    background-size: 30%;
-    padding-bottom: 4rem;
-    min-height: 100svh;
+main {
+  background: url(../img/logo_ar_full.png) var(--black) no-repeat fixed center;
+  background-size: 30%;
+  padding-bottom: 4rem;
+  min-height: 100svh;
 }
 
 .error,
 .ar-error-message {
-    color: var(--bs-danger);
+  color: var(--bs-danger);
 }
 
 .asc::after {
-    display: inline-block;
-    font-family: bootstrap-icons !important;
-    font-style: normal;
-    font-weight: normal !important;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    vertical-align: -.125em;
-    -webkit-font-smoothing: antialiased;
-    content: "\F229";
-    transition: all 300ms ease-in-out;
+  display: inline-block;
+  font-family: bootstrap-icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -0.125em;
+  -webkit-font-smoothing: antialiased;
+  content: "\F229";
+  transition: all 300ms ease-in-out;
 }
 
 .desc::after {
-    display: inline-block;
-    font-family: bootstrap-icons !important;
-    font-style: normal;
-    font-weight: normal !important;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    vertical-align: -.125em;
-    -webkit-font-smoothing: antialiased;
-    content: "\F235";
-    transition: all 300ms ease-in-out;
+  display: inline-block;
+  font-family: bootstrap-icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -0.125em;
+  -webkit-font-smoothing: antialiased;
+  content: "\F235";
+  transition: all 300ms ease-in-out;
 }
 
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
-  }
-  
+  width: 10px;
+}
+
 /* Track */
 ::-webkit-scrollbar-track {
-background: var(--ar-white);
+  background: var(--ar-white);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-background: var(--ar-teal);
+  background: var(--ar-teal);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-background: var(--ar-blue);
+  background: var(--ar-blue);
 }

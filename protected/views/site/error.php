@@ -5,8 +5,15 @@
 $this->pageTitle=Yii::app()->name . ' - Error';
 ?>
 
-<h2>Error <?php echo $code; ?></h2>
-
-<div class="error">
-<?php echo CHtml::encode($message); ?>
-</div>
+<section class="ar-error">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="ar-error-wrapper">
+                    <h2>Errore <span><?php echo $code; ?></span></h2>
+                    <h3><?php echo CHtml::encode($message); ?></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
