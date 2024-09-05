@@ -771,6 +771,8 @@ html.mobile .pswp .pswp__ui .pswp__button.pswp__button--arrow--right, html.mobil
   .ar-hero .ar-navbar ul {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
   }
 }
 .ar-hero .ar-navbar ul li {
