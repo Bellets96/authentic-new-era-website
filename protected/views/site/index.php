@@ -57,7 +57,7 @@ $linkHome = $authentic['linkHome'];
               <h6 class="ar-blog-top"><?php echo CHtml::encode(Lookup::item('PostCategory',$post->category)); ?></h6>
               <div class="ar-blog-text">
                 <h2><?php echo CHtml::encode($post->title); ?></h2>
-                <p><?php echo CHtml::encode($post->content); ?></p>
+                <div class="ar-content-wrapper"><?php echo $post->content; ?></div>
               </div>
               <small class="ar-blog-bottom"><?php echo CHtml::encode(date("d/m/Y H:m",$post->update_time)); ?></small>
             </div>

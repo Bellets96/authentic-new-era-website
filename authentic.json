@@ -42,32 +42,32 @@
     "1": {
       "titolo": "Chi siamo",
       "testo": "Vi diamo il benvenuto su Authentic Remastered, il server roleplay ambientato nel cuore dell’Italia, fondato nel mese di Dicembre 2022 portando con determinazione il server ad essere conosciuto nel panorama italiano.",
-      "immagine": "/ar/img/homepage/img-1.png"
+      "immagine": "/ar/img/homepage/sun.jpg"
     },
     "2": {
       "titolo": "Il nostro obiettivo",
       "testo": "Server nato per simulare al meglio la vita reale senza tralasciare il piacere e il divertimento del gioco di ruolo; l'obiettivo è, anche in questa versione, di portare su FiveM la maggiore espressione di role play, andando a limitare la presenza di giocatori non adatti alla nostra community, pilastro importante per il nostro server, poiché siamo sempre attenti ai feedback dei giocatori.",
-      "immagine": "/ar/img/homepage/img-2.png"
+      "immagine": "/ar/img/homepage/dock.jpg"
     },
     "3": {
       "titolo": "L'ambientazione",
       "testo": "Il server è ambientato nella città eterna, Roma, la quale trasporterà la vostra esperienza di gioco in un viaggio senza precedenti, qui si svolgerà la vostra avventura, in un'ambientazione dove la cultura e la storia della nostra Capitale si uniscono al caratteristico caos urbano creando un'esperienza di gioco autentica e coinvolgente.",
-      "immagine": "/ar/img/homepage/img-3.png"
+      "immagine": "/ar/img/homepage/skyline.jpg"
     },
     "4": {
       "titolo": "Le nostre unicità",
       "testo": "Esplora la nostra nuova versione, tutti gli edifici e i punti di interesse presenti all’interno del nostro server sono stati creati con cura per garantire un'esperienza di gioco realistica, come ad esempio lo Stadio Olimpico presente solamente nel nostro server.",
-      "immagine": "/ar/img/homepage/img-4.png"
+      "immagine": "/ar/img/homepage/pantheon.jpg"
     },
     "5": {
       "titolo": "La tua vita",
       "testo": "Scegli il tuo destino tra una vasta gamma di lavori, tra i quali possiamo trovare: forze dell'ordine, famiglie e bande criminali, imprenditori, soccorritori e molti altri.",
-      "immagine": "/ar/img/homepage/img-5.png"
+      "immagine": "/ar/img/homepage/aci.jpg"
     },
     "6": {
       "titolo": "Te",
       "testo": "Ogni scelta influenzerà la tua storia e il mondo circostante, cerca, con il tuo PG, di vivere l’esperienza di gioco che ti permetta di poter soddisfare le tue emozioni e le tue ambizioni.",
-      "immagine": "/ar/img/homepage/img-6.png"
+      "immagine": "/ar/img/homepage/sea.jpg"
     }
   },
 

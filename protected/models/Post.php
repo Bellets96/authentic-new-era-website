@@ -139,6 +139,17 @@ class Post extends CActiveRecord
 			return false;
 		}
 	}	
+	protected function beforeValidate()
+	{
+		if (parent::beforeValidate()) {
+			if ($this->isNewRecord) {
+				$this->author_id = Yii::app()->user->id;
+			} 
+			return true;
+		} else {
+			return false;
+		}
+	}	
 	public function getStatusName()
 	{
 		return $this->status ? $this->status : '(Nessuno Status)';

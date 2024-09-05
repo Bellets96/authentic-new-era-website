@@ -384,9 +384,14 @@
       .ar-blog-text {
         height: 100%;
 
-        p {
+        .ar-content-wrapper {
           overflow: auto;
           height: calc(100% - 3rem);
+
+          ul,
+          ol {
+            margin-left: 1rem;
+          }
         }
       }
 

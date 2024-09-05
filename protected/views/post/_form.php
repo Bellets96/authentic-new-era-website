@@ -22,7 +22,7 @@
 	<div class="ar-input-group">
 		<div class="ar-textarea">
 			<?php echo $form->textArea($model,'content',array('placeholder'=>' ', 'rows' => 6)); ?>
-			<?php echo $form->label($model,'content'); ?>
+			<?php echo $form->label($model,'content', array('class'=>'editor-label')); ?>
 			<?php echo $form->error($model,'content', array('class'=>'ar-error-message')); ?>
 		</div>
 	</div>
@@ -42,5 +42,31 @@
 	<div class="ar-btn-group">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Crea' : 'Salva', array('class'=>'ar-btn')); ?>
 	</div>
+
+<script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
+
+<script>
+    ClassicEditor
+		.create(document.querySelector('#Post_content'), {
+			toolbar:  [
+				'undo',
+				'redo',
+				'|',
+				'heading',
+				'|',
+				'bold',
+				'italic',
+				'|',
+				'link',
+				'bulletedList',
+				'numberedList',
+				'blockQuote'
+            ],
+		})
+        .catch(error => {
+            console.error(error);
+        });
+</script>
+
 
 <?php $this->endWidget(); ?>
