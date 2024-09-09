@@ -7,7 +7,7 @@ return array(
 	
 	'class'=>'CDbConnection',
 	'connectionString' => 'mysql:host=2.58.84.51;dbname=authenticnewera',
-	'username' => 'sito',
-	'password' => 'LOCow1rACAHoKomiw88iWO8AziROm7',
+	'username' => 'bellets',
+	'password' => '5ILAVeKAti3OtI1355rapo15Ma5A2a',
 	'charset' => 'utf8',
 );
