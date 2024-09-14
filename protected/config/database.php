@@ -12,8 +12,8 @@
 return array(
 	'connectionString' => 'mysql:host=127.0.0.1:3306;dbname=authenticwebsite',
 	'emulatePrepare' => true,
-	'username' => 'root',
-	'password' => '',
+	'username' => 'sito2',
+	'password' => '61Du5OD42E2u',
 	'charset' => 'utf8',
 	
 );
